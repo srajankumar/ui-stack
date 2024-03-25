@@ -15,7 +15,7 @@ const Hero = () => {
         >
           srajan
         </Link>
-        's beautifully developed mini-projects.
+        &apos;s beautifully developed mini-projects.
       </div>
     </div>
   );
