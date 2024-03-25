@@ -1,36 +1,53 @@
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
 import { GitHubLogoIcon, GlobeIcon } from "@radix-ui/react-icons";
-import { Globe } from "lucide-react";
 import Link from "next/link";
 
-const Card = () => {
+interface Project {
+  id: number;
+  author: string;
+  title: string;
+  description: string;
+  image: string;
+  links: {
+    github: string;
+    live: string;
+  };
+}
+
+const Card: React.FC<{ project: Project }> = ({ project }) => {
+  const { title, description, image, links } = project;
+
   return (
     <div className="h-full border rounded-lg overflow-hidden">
-      <div className="w-full">
-        <AspectRatio ratio={16 / 9}>
-          <Image
-            src="/reoarts.png"
-            alt="Image"
-            width={500}
-            height={500}
-            className="object-cover"
-          />
-        </AspectRatio>
-      </div>
+      <Link href={links.live} target="_blank" className="w-full">
+        <Image
+          src={`/projects/${image}`}
+          alt={title}
+          width={500}
+          height={500}
+          className="object-cover hover:opacity-50 transition-all duration-200 aspect-video"
+        />
+      </Link>
       <div className="p-5">
-        <h1 className="title-font text-lg font-medium mb-3">The Catalyzer</h1>
+        <h1 className="title-font text-lg font-medium mb-3">{title}</h1>
         <p className="text-sm mb-3 leading-relaxed text-primary/60">
-          Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-          microdosing tousled waistcoat.
+          {description}
         </p>
         <div className="flex gap-5">
-          <Link href="/">
-            <GitHubLogoIcon className="w-5 h-5" />
+          <Link
+            target="_blank"
+            className="hover:text-primary/60 transition-all duration-200"
+            href={links.github}
+          >
+            <GitHubLogoIcon className="w-5 h-5 cursor-pointer" />
           </Link>
-          <Link href="/">
-            <GlobeIcon className="w-5 h-5" />
+          <Link
+            target="_blank"
+            className="hover:text-primary/60 transition-all duration-200"
+            href={links.live}
+          >
+            <GlobeIcon className="w-5 h-5 cursor-pointer" />
           </Link>
         </div>
       </div>
