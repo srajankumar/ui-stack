@@ -1,5 +1,17 @@
 export const projects = [
   {
+    id: 0,
+    author: "srajankumar",
+    title: "Links",
+    description: "All of my social links in one place.",
+    image: "links.png",
+    links: {
+      github: "https://github.com/srajankumar/links",
+      live: "https://links.srajan.tech/",
+    },
+  },
+
+  {
     id: 1,
     author: "srajankumar",
     title: "Youtube Landing Clone",
@@ -120,7 +132,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 11,
     author: "srajankumar",
     title: "Login Card",
     description: "A simple login and sign-up card.",
@@ -132,7 +144,7 @@ export const projects = [
   },
 
   {
-    id: 11,
+    id: 12,
     author: "srajankumar",
     title: "Product Preview",
     description: "A simple product view card.",
@@ -144,7 +156,7 @@ export const projects = [
   },
 
   {
-    id: 12,
+    id: 13,
     author: "srajankumar",
     title: "Text Utils",
     description: "A simple GitHub card generator.",
@@ -156,7 +168,7 @@ export const projects = [
   },
 
   {
-    id: 13,
+    id: 14,
     author: "srajankumar",
     title: "First Year GPA",
     description: "Marks to GPA converter.",
@@ -168,7 +180,7 @@ export const projects = [
   },
 
   {
-    id: 14,
+    id: 15,
     author: "srajankumar",
     title: "Freshies",
     description: "A Menu App.",
