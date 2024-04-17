@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 0,
+    id: 1,
     author: "srajankumar",
     title: "Links",
     description: "All of my social links in one place.",
@@ -12,7 +12,19 @@ export const projects = [
   },
 
   {
-    id: 1,
+    id: 2,
+    author: "srajankumar",
+    title: "J.A.R.N.V.I.S",
+    description: "Just A Rather Not Very Intelligent System.",
+    image: "jarnvis.png",
+    links: {
+      github: "https://github.com/srajankumar/jarnvis",
+      live: "https://jarnvis.vercel.app",
+    },
+  },
+
+  {
+    id: 3,
     author: "srajankumar",
     title: "Youtube Landing Clone",
     description: "A dark - mode of YouTube clone.",
@@ -24,7 +36,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 4,
     author: "srajankumar",
     title: "QrBy",
     description: "A simple QR code generator.",
@@ -36,7 +48,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 5,
     author: "srajankumar",
     title: "Shoppy",
     description: "A simple JavaScript Shopping-Cart.",
@@ -48,7 +60,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 6,
     author: "srajankumar",
     title: "Git Card",
     description: "A simple GitHub card generator.",
@@ -60,7 +72,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 7,
     author: "srajankumar",
     title: "VPNN",
     description: "A simple VPN landing page UI.",
@@ -72,7 +84,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 8,
     author: "srajankumar",
     title: "Ani Blog",
     description: "A blog website for weebs.",
@@ -84,7 +96,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 9,
     author: "TejasNayak42",
     title: "Green Escapes",
     description: "A Tourist and Hospitality Website.",
@@ -96,7 +108,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 10,
     author: "srajankumar",
     title: "Portfolio Template",
     description: "A simple Vite Portfolio Template.",
@@ -108,7 +120,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 11,
     author: "srajankumar",
     title: "Noties",
     description: "A Note taking App.",
@@ -120,7 +132,7 @@ export const projects = [
   },
 
   {
-    id: 10,
+    id: 12,
     author: "srajankumar",
     title: "Hover.me",
     description: "A simple CSS hover thingie.",
@@ -132,7 +144,7 @@ export const projects = [
   },
 
   {
-    id: 11,
+    id: 13,
     author: "srajankumar",
     title: "Login Card",
     description: "A simple login and sign-up card.",
@@ -144,7 +156,7 @@ export const projects = [
   },
 
   {
-    id: 12,
+    id: 14,
     author: "srajankumar",
     title: "Product Preview",
     description: "A simple product view card.",
@@ -156,7 +168,7 @@ export const projects = [
   },
 
   {
-    id: 13,
+    id: 15,
     author: "srajankumar",
     title: "Text Utils",
     description: "A simple GitHub card generator.",
@@ -168,7 +180,7 @@ export const projects = [
   },
 
   {
-    id: 14,
+    id: 16,
     author: "srajankumar",
     title: "First Year GPA",
     description: "Marks to GPA converter.",
@@ -180,7 +192,7 @@ export const projects = [
   },
 
   {
-    id: 15,
+    id: 17,
     author: "srajankumar",
     title: "Freshies",
     description: "A Menu App.",
