@@ -35,20 +35,24 @@ const Card: React.FC<{ project: Project }> = ({ project }) => {
           {description}
         </p>
         <div className="flex gap-5">
-          <Link
-            target="_blank"
-            className="hover:text-primary/60 transition-all duration-200"
-            href={links.github}
-          >
-            <GitHubLogoIcon className="w-5 h-5 cursor-pointer" />
-          </Link>
-          <Link
-            target="_blank"
-            className="hover:text-primary/60 transition-all duration-200"
-            href={links.live}
-          >
-            <GlobeIcon className="w-5 h-5 cursor-pointer" />
-          </Link>
+          {links.github && (
+            <Link
+              target="_blank"
+              className="hover:text-primary/60 transition-all duration-200"
+              href={links.github}
+            >
+              <GitHubLogoIcon className="w-5 h-5 cursor-pointer" />
+            </Link>
+          )}
+          {links.live && (
+            <Link
+              target="_blank"
+              className="hover:text-primary/60 transition-all duration-200"
+              href={links.live}
+            >
+              <GlobeIcon className="w-5 h-5 cursor-pointer" />
+            </Link>
+          )}
         </div>
       </div>
     </div>
