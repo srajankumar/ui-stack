@@ -9,13 +9,13 @@ const Hero = () => {
       <div>
         A curated collection of{" "}
         <Link
-          href="https://www.srajan.tech/"
+          href="https://srajan.tech"
           target="_blank"
           className="underline underline-offset-2 hover:underline-offset-4"
         >
           srajan
         </Link>
-        &apos;s beautifully developed mini-projects.
+        &apos;s beautifully developed frontend projects.
       </div>
     </div>
   );

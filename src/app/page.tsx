@@ -47,9 +47,12 @@ export default function Home() {
           variants={FADE_UP_ANIMATION_VARIANTS}
         >
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5">
-            {projects.map((project) => (
-              <Card key={project.id} project={project} />
-            ))}
+            {projects
+              .slice()
+              .reverse()
+              .map((project) => (
+                <Card key={project.id} project={project} />
+              ))}
           </div>
         </motion.div>
       </main>
