@@ -222,20 +222,8 @@ export const projects = [
       live: "https://boxchat.vercel.app",
     },
   },
-
   {
     id: 21,
-    author: "srajankumar",
-    title: "St. Jude's Play House",
-    description: "Freelance website for St. Jude's Play House.",
-    image: "stjudesplayhouse.png",
-    links: {
-      github: "",
-      live: "https://www.stjudesplayhouse.com",
-    },
-  },
-  {
-    id: 22,
     author: "srajankumar",
     title: "IEEE COSMIC 2024",
     description: "Website created for IEEE International Conference.",
