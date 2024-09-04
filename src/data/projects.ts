@@ -233,4 +233,16 @@ export const projects = [
       live: "https://cosmic.sahyadri.edu.in",
     },
   },
+
+  {
+    id: 22,
+    author: "srajankumar",
+    title: "Info Lock",
+    description: "Your secure online information repository.",
+    image: "infolock.png",
+    links: {
+      github: "",
+      live: "https://infolock.vercel.app",
+    },
+  },
 ];
